@@ -16,6 +16,11 @@ public class Empleado {
     private String cargo;
     private int numHijos;
     
+    /**
+     *
+     * @param dni: dni empleado
+     * @param nombre: nombre empleado
+     */
     public Empleado (String dni, String nombre){
         this.dni=dni;
         this.nombre=nombre;
@@ -23,6 +28,11 @@ public class Empleado {
         this.numHijos=0;
     }
     
+    /**
+     *
+     * @param base
+     * @return Saldo total según cargo
+     */
     public double calcula_sueldo(double base){
         double total=base;
         
@@ -34,48 +44,95 @@ public class Empleado {
             total+=numHijos*50;
         return total;
     }
+    /*
+    
+    */
 
+    /**
+     *
+     * @return datos empleado
+     */
     public String imprimir_emp() {
         return "DNI: " + dni + ", nombre:" + nombre + ", dirección: " + direccion + ", cargo:" 
                 + cargo + ", número de hijos:" + numHijos;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getDni() {
         return dni;
     }
 
+    /**
+     *
+     * @param dni
+     */
     public void setDni(String dni) {
         this.dni = dni;
     }
 
+    /**
+     *
+     * @return nombre empleado
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     *
+     * @param nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    /**
+     *
+     * @return dirección
+     */
     public String getDireccion() {
         return direccion;
     }
 
+    /**
+     *
+     * @param direccion
+     */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
 
+    /**
+     *
+     * @return cargo
+     */
     public String getCargo() {
         return cargo;
     }
 
+    /**
+     *
+     * @param cargo
+     */
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
 
+    /**
+     *
+     * @return número de hijos
+     */
     public int getNumHijos() {
         return numHijos;
     }
 
+    /**
+     *
+     * @param numHijos
+     */
     public void setNumHijos(int numHijos) {
         this.numHijos = numHijos;
     }

@@ -7,6 +7,10 @@ package ed06_tareaproyecto;
  */
 public class Main {
    
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Empleado empleado01 = new Empleado("1245678M","Perico de los Palotes");
         
